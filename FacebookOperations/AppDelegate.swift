@@ -7,21 +7,58 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKShareKit
+
+import FBSDKLoginKit
+
+/*
+ // https://www.simplifiedios.net/facebook-login-swift-3-tutorial/
+ // https://developers.facebook.com/docs/facebook-login/ios
+ 
+ // App ID: 493244844472484
+ 
+ <key>CFBundleURLTypes</key>
+ <array>
+ <dict>
+ <key>CFBundleURLSchemes</key>
+ <array>
+ <string>fb493244844472484</string>
+ </array>
+ </dict>
+ </array>
+ <key>FacebookAppID</key>
+ <string>493244844472484</string>
+ <key>FacebookDisplayName</key>
+ <string>MyFirstApp</string>
+ 
+ <key>LSApplicationQueriesSchemes</key>
+ <array>
+ <string>fbapi</string>
+ <string>fb-messenger-share-api</string>
+ <string>fbauth2</string>
+ <string>fbshareextension</string>
+ </array>
+*/
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
+    
     var window: UIWindow?
 
-
+    //added these 3 methods
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        FBSDKAppEvents.activateApp()
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
