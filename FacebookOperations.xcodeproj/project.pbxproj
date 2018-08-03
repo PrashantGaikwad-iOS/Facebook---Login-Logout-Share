@@ -14,6 +14,7 @@
 		89658C5021130DC20090F072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89658C4F21130DC20090F072 /* Assets.xcassets */; };
 		89658C5321130DC20090F072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89658C5121130DC20090F072 /* LaunchScreen.storyboard */; };
 		89658C5B211326380090F072 /* ShareOnFbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89658C5A211326380090F072 /* ShareOnFbViewController.swift */; };
+		89658C5D2114161C0090F072 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89658C5C2114161C0090F072 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		89658C5221130DC20090F072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89658C5421130DC20090F072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89658C5A211326380090F072 /* ShareOnFbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOnFbViewController.swift; sourceTree = "<group>"; };
+		89658C5C2114161C0090F072 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		956F3F4B7AE26812217CE1C2 /* Pods-FacebookOperations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookOperations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookOperations/Pods-FacebookOperations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 		89658C3C21130DC10090F072 = {
 			isa = PBXGroup;
 			children = (
+				89658C5C2114161C0090F072 /* README.md */,
 				89658C4721130DC10090F072 /* FacebookOperations */,
 				89658C4621130DC10090F072 /* Products */,
 				4CE121BD6018A6F344334C0C /* Pods */,
@@ -153,6 +156,7 @@
 			files = (
 				89658C5321130DC20090F072 /* LaunchScreen.storyboard in Resources */,
 				89658C5021130DC20090F072 /* Assets.xcassets in Resources */,
+				89658C5D2114161C0090F072 /* README.md in Resources */,
 				89658C4E21130DC10090F072 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
