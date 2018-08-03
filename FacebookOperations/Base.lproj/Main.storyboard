@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Facebook Operations-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookOperations" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,7 +39,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hdx-sd-3KQ"/>
+                    <navigationItem key="navigationItem" title="Facebook Operations" id="hdx-sd-3KQ"/>
                     <connections>
                         <outlet property="logInLogOutButton" destination="shc-r6-zcM" id="96s-KC-dRx"/>
                     </connections>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="95.802098950524751"/>
         </scene>
-        <!--Share On Fb View Controller-->
+        <!--Share with facebook-->
         <scene sceneID="ftP-xX-8Ij">
             <objects>
-                <viewController storyboardIdentifier="ShareOnFbViewController" id="Pyu-ry-WRy" customClass="ShareOnFbViewController" customModule="FacebookOperations" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShareOnFbViewController" title="Share with facebook" id="Pyu-ry-WRy" customClass="ShareOnFbViewController" customModule="FacebookOperations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SJA-PK-zG4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
